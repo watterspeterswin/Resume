@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html manifest="../resume.manifest" >
   <head>
     <meta charset="UTF-8" />
 	  <link href="stylesheet/mystyle.css" media="all" rel="stylesheet" type="text/css">
-    <title>interests</title>
+    <title>Interests</title>
 	</head>
 	<body>
+		<header>
+		<h1>Interests</h1>
+		</header>
 		<nav>
 			<a href="home.html" class="navtile">Home</a>
-			<a href="resume.html" class="navtile">Resume</a>
+			<a href="resume.html" class="navtile">Resum&#x00E9;</a>
 			<a href="interests.html" class="navtile-select">Interests</a>
 			<a href="reflections.html" class="navtile">Reflections</a>
 			<a href="guestbook.html" class="navtile">Guestbook</a>
 		</nav>
+		<section>
+
+		<h3 id="personalmsg">Here are some of my interests...</h3>
+		<h4>Here are some great learning sites...</h4>
+		<ul>
+			<li>
+			<a href="https://www.hackerrank.com/domains"  target="_blank">Hacker Rank</a>
+			</li>
+			<li>
+			<a href="https://codility.com/programmers/lessons/"  target="_blank">Codility</a>
+			</li>
+			<li>
+			<a href="http://www.w3schools.com/" target="_blank">w3schools</a>
+			</li>			
+			<li>
+			<a href="http://www.lynda.com/"  target="_blank">lynda</a>
+			</li>
+		</ul>
+
+		<p>A team loving what they do...</p>
+		<video controls="controls" width="320">
+			<source src="images/dogsled.mp4" type="video/mp4"/>
+			this video is not supported by your browser
+		</video>
+		
+		<br/><br/>
+		<label>Here is <a href="http://freemusicarchive.org/music/Chauncey_Olcott/" >Chauncey Olcott</a> singing a song my mother used to sing to me...</label>
+		<audio controls="controls" >
+			<source src="images/Chauncey_Olcott_-_Too_Ra_Loo_Ra_Loo_Ral_Irish_Lullaby.mp3" type="audio/mp3" />
+		</audio>
+		<br/><br/>
+
+		<label>Click on the pictures below for more...</label>
+		<br/>
+		<map name="navimagemap">
+			<area shape="rect" coords="0,0,48,63" href="http://www.tripadvisor.com/Attractions-g294217-Activities-Hong_Kong.html"  target="_blank" alt="hongkong"/>
+			<area shape="rect" coords="48,0,143,63" href="http://www.paws.org/cats-and-dogs/featured-pets/" target="_blank" alt="dog"/>
+			<area shape="rect" coords="143,0,178,63" href="http://www.tripadvisor.com/Attractions-g187497-Activities-Barcelona_Catalonia.html" target="_blank" alt="barcelona"/>
+			<area shape="rect" coords="178,0,248,63" href="http://www.wafarmersmarkets.com/" target="_blank" alt="farmersmarket"/>
+			<area shape="rect" coords="249,0,317,63" href="http://www.tripadvisor.com/Attractions-g187870-Activities-Venice_Veneto.html" target="_blank" alt="venice"/>
+			<area shape="rect" coords="317,0,384,63" href="https://en.wikipedia.org/wiki/Qingming_Festival" target="_blank" alt="columbarium"/>
+			<area shape="rect" coords="384,0,463,63" href="http://www.fathers.com/s7-hot-topics/c38-sons/first-hero-first-love-a-dads-role-for-sons-and-daughters/" target="_blank" alt="family"/>
+		</map>
+		<img src="images/collage.png" usemap="#navimagemap" alt="image navigation map"/>
+		</section>
+		<footer>
+		</footer>
 	</body>
 </html>

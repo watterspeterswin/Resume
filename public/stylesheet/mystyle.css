@@ -1,3 +1,26 @@
+body
+{
+font-family:arial, verdana, helvetica;
+color:gray;
+font-size:14px;
+background-color:lightseagreen;
+}
+
+header
+{
+	padding-left:20px;
+	margin:0px;
+    display:block;
+/* 	float:top; */
+	width:830px;
+	height:60px;
+	background:red;
+}
+p.labl
+{
+    width: 390px;
+    text-align: right;
+}
 nav 
 {
 font-family:arial, verdana, helvetica;
@@ -14,10 +37,11 @@ background:green;
 a.navtile
 {
 	display: block;
-    width: 100px;
+  width: 100px;
 	height: 30px;
 	color: yellow;
-    text-decoration: none;
+	vertical-align:bottom;
+  text-decoration: none;
 }
 
 /* here the navigation entry that matches the current page */
@@ -27,14 +51,36 @@ a.navtile-select
     width: 100px;
 	height: 30px;
 	color: white;
+	text-align:center;
+	vertical-align:middle;
 	text-decoration: none;
 	background-color: #669999;
 }
 
-body
+section
 {
-font-family:arial, verdana, helvetica;
-color:gray;
-font-size:14px;
-background-color:white;
+	padding-left:20px;
+    margin-left:100px;
+	display:block;
+	width: 730px;
+	height:700px;
+	background:lightgreen;
+}
+
+#personalmsg
+{
+	font-size:2.0em;
+	color:red;
+	padding:0px;
+	margin-top:0px;
+	font-family:"Comic Sans MS", cursive, sans-serif
+}
+
+footer
+{
+	display:block;
+	float:left;
+	width:830px;
+	height:40px;
+	background:lightseagreen;
 }

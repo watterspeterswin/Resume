@@ -6,12 +6,85 @@
 	  <title>guestbook</title>
 	</head>
 	<body>
+	    <header>
+		<h1>Guestbook</h1>
+		</header>
 		<nav>
 			<a href="home.html" class="navtile">Home</a>
-			<a href="resume.html" class="navtile">Resume</a>
+			<a href="resume.html" class="navtile">Resum&#x00E9;</a>
 			<a href="interests.html" class="navtile">Interests</a>
 			<a href="reflections.html" class="navtile">Reflections</a>
 			<a href="guestbook.html" class="navtile-select">Guestbook</a>
 		</nav>
+		<section>
+		<h3 id="personalmsg">Please sign my guest book...</h3>
+		
+
+		<form	method="get" enctype="text/plain"
+		action="mailto:p.watters0000@edmail.edcc.edu"		>
+		<input type="hidden" name="Subject" value="GuestbookRegistration" />
+		<p class="labl">First Name <input type="text" name="FirstName" size="40"/></p>
+		<p class="labl">Last Name <input type="text" name="LastName" size="40"/></p>
+		<p class="labl">Email <input type="text" name="Email" size="40"/></p>
+		<p class="labl">Country <input type="text" name="Country" size="40"/></p>
+		<br/>
+		<p>How did you Hear about this site? <br/>
+		<select name="Reference" >
+		    <option>I'm a friend</option>
+			<option>A friend directed me to your site</option>
+			<option>A search engine directed me to your site</option>
+			<option>I came across your site by accident</option>
+			<option>Other</option>
+		</select></p>
+        <br/>
+<p>
+		Comments:<br/>
+		<textarea Name="comments" cols="40" rows="3"></textarea><p>
+		<br/>
+		<input type="submit" />&nbsp;&nbsp;&nbsp;<input type="reset" />
+		</form>
+		<br/>
+		<p id="MyLocation">Click the button to get your position:</p>
+		<button onclick="getLocation()">My Location</button>
+		<div id="map"></div>
+		<script>
+		var x=document.getElementById("MyLocation");
+		function getLocation()
+		{
+		if (navigator.geolocation)
+		{
+		navigator.geolocation.getCurrentPosition(showPosition,showError);
+		}
+		else{x.innerHTML="Geolocation is not supported by this browser.";}
+		}
+		function showPosition(position)
+		{
+		var latlon=position.coords.latitude+","+position.coords.longitude;
+		var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
+		+latlon+"&zoom=14&size=400x300&sensor=false";
+		document.getElementById("map").innerHTML="<img src='"+img_url+"' />";
+		}
+		function showError(error)
+		{
+		switch(error.code)
+		{
+		case error.PERMISSION_DENIED:
+		x.innerHTML="User denied the request for Geolocation."
+		break;
+		case error.POSITION_UNAVAILABLE:
+		x.innerHTML="Location information is unavailable."
+		break;
+		case error.TIMEOUT:
+		x.innerHTML="The request to get user location timed out."
+		break;
+		case error.UNKNOWN_ERROR:
+		x.innerHTML="An unknown error occurred."
+		break;
+		}
+		}
+		</script>
+		</section>
+		<footer>
+		</footer>
 	</body>
 </html>

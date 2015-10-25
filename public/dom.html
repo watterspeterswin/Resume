@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript Fun</title>
+     <meta name="author" content="your name" />
+     <meta name="keywords" content="JavaScript" />
+     <meta name="description" content="A simple JavaScript Expression Evaluator" />
+<script type="text/javascript">
+<!--
+//<[CDATA[
+/* ------------------------------------
+function DOM()
+purpose:      Get input from the user and 
+                 add the information to a specific div 
+author:         Marti Baker
+date:             12/19/2013
+parameters:    none
+return value:  true, let the calling position know that function
+                    has been completed
+----------------------------------------*/
+function DOM(){
+
+    var strUser = prompt("What is your first name?");
+    
+    // dynamically write the output to the window
+    document.getElementById("output").innerHTML = "Thank you " + strUser + " for visiting our page. ";
+    
+    // hid the input button
+    document.getElementById("input").style.visibility = "hidden";
+    
+    return true;
+}
+
+//]]>
+-->
+</script>
+</head>
+
+<body>
+<h3>DHTML and DOM demonstration</h3>
+
+<!-- add a button for the user to click and call the JavaScript function above -->
+<!-- give the paragraph a unique identifier (id) to hide it once the input has been received -->
+<p id="input"><input type="button" onclick="return DOM();" value="Please click me!" /></p>
+
+<!-- create a location for content to be dynamically adding info to the page -->
+<div id="output">
+
+</div>
+</body>
+</html>
