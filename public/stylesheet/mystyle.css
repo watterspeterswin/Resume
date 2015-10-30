@@ -31,13 +31,12 @@ float:left;
 width:100px;
 height:700px;
 background:green;
-
 }
 /* here the navigation entry */
 a.navtile
 {
 	display: block;
-  width: 100px;
+    width: 100px;
 	height: 30px;
 	color: yellow;
 	vertical-align:bottom;
@@ -59,11 +58,12 @@ a.navtile-select
 
 section
 {
+	padding-top: 10px;
 	padding-left:20px;
     margin-left:100px;
 	display:block;
 	width: 730px;
-	height:700px;
+	height:690px;
 	background:lightgreen;
 }
 
@@ -74,6 +74,18 @@ section
 	padding:0px;
 	margin-top:0px;
 	font-family:"Comic Sans MS", cursive, sans-serif
+}
+
+h2.Center
+{
+	margin-top:0;
+	text-align:center;
+}
+
+p.Center
+{
+	margin-top:0;
+	text-align:center;
 }
 
 footer
