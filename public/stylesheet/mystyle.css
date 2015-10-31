@@ -1,9 +1,9 @@
 body
 {
-font-family:arial, verdana, helvetica;
-color:gray;
-font-size:14px;
-background-color:lightseagreen;
+	font-family:arial, verdana, helvetica;
+	color:gray;
+	font-size:14px;
+	background-color:lightseagreen;
 }
 
 header
@@ -11,36 +11,20 @@ header
 	padding-left:20px;
 	margin:0px;
     display:block;
-/* 	float:top; */
-	width:830px;
+	width:850px;
 	height:60px;
 	background:red;
 }
-p.labl
-{
-    width: 390px;
-    text-align: right;
-}
-nav 
-{
-font-family:arial, verdana, helvetica;
-font-size:20px;
-width: 100px;
-display:block;
-float:left;
-width:100px;
-height:700px;
-background:green;
-}
+
 /* here the navigation entry */
 a.navtile
 {
 	display: block;
-    width: 100px;
+	width: 100px;
 	height: 30px;
 	color: yellow;
 	vertical-align:bottom;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 /* here the navigation entry that matches the current page */
@@ -56,14 +40,33 @@ a.navtile-select
 	background-color: #669999;
 }
 
+p.labl
+{
+    width: 390px;
+    text-align: right;
+}
+
+nav 
+{
+	font-family:arial, verdana, helvetica;
+	font-size:20px;
+	width: 100px;
+	display:block;
+	float:left;
+	width:100px;
+	height:1000px;
+	background:green;
+}
+
 section
 {
 	padding-top: 10px;
 	padding-left:20px;
     margin-left:100px;
+	padding-right:20px;
 	display:block;
 	width: 730px;
-	height:690px;
+	height:990px;
 	background:lightgreen;
 }
 
@@ -95,4 +98,26 @@ footer
 	width:830px;
 	height:40px;
 	background:lightseagreen;
+}
+
+table
+{
+	width:100%;
+}
+th,h2.resumeHeader
+{
+	width:50%;
+	font-family: tahoma;
+	font-style: italic;
+}
+div.leftCol
+{
+	font-weight:bold;	
+	display:inline-block;margin-right:10px;
+}
+div.rightCol
+{
+	font-weight:bold;
+	display:inline-block;
+	float:right;
 }

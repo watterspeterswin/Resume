@@ -3,7 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link href="stylesheet/mystyle.css" media="all" rel="stylesheet" type="text/css">
-			<title>R&eacute;sum&eacute;</title>
+		<title>R&eacute;sum&eacute;</title>
+		<script>
+		function printSection(SectionID) 
+		{
+			var printContents = document.getElementById(SectionID).innerHTML;
+			var originalContents = document.body.innerHTML;
+			document.body.innerHTML = printContents;
+			window.print();
+			document.body.innerHTML = originalContents;
+		}
+		</script>
 	</head>
 	<body>
 		<header>
@@ -16,38 +26,82 @@
 			<a href="projects.html" class="navtile">Projects</a>
 			<a href="reflections.html" class="navtile">Reflections</a>
 			<a href="guestbook.html" class="navtile">Guestbook</a>
+			<!--- Put button here to print the resume out -->
+			<input  type="button" onclick="printSection('printableArea')" value="Print R&eacute;sum&eacute;" />
 		</nav>
-		<section>
+		<section id="printableArea">
 			<h2 class="Center" >Peter Francis Watters</h2>
 			<p class="Center"  >Internet Certified and Ready to Succeed!</p>
-			<br/>
 			<hr class="Fullhr"/>
-				<h2><span style="font-style: italic;">Certifications</span><br/>
-				</h2>
-				<ul>
-					<li><a href="http://www.edcc.edu">Edmonds Community College</a> Web Developer Certificate</li>
-					<li><a href="http://www.ciwcertified.com/">CIW</a> Internet Business Associate Certificate</li>
-					<li><a href="http://www.ciwcertified.com/">CIW</a> Site Development	Associate Certificate</li>
-					<li><a href="http://www.ciwcertified.com/">CIW</a> JavaScript Specialist Certificate</li>
-					<li><a href="https://www.mysql.com/certification/">MySQL</a> DBA Certificate</li>
-					<li><a href="https://www.mysql.com/certification/">MySQL</a> Developer Certificate</li>
-					<li><a href="http://www.washington.edu/">UW</a> C++ Object Oriented	Programming Certificate</li>
-					<li><a href="http://spu.edu">SPU</a> Business Programming Certificate</li>
-				</ul>
-				<h2>Skills</h2>
-				<ul>
-					<li>HTML5, CSS, JavaScript, SQL, PHP<br/>
-					</li>
-					<li>C++, JAVA, C#</li>
-					<li>Powershell, Bash, Python<br/>
-					</li>
-					<li>eclipse, Visual Studio</li>
-					<li>Git, GitHub, Perforce, Visual SourceSafe, PVCS, RCS</li>
-					<li>Windows, UNIX, Linux</li>
-					<li>AWS, Google AppEngine</li>
-					<li>Project management skills for individual and team job tasks</li>
-				</ul>
-				<hr class="Fullhr"/>
+			<h2 class="resumeHeader">Summary</h2>
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;I love working in a team of talented, smart and motivated colleagues. I enjoy the whole software life cycle –
+				gathering requirements, designing, implementing, testing and maintaining software. I get the most satisfaction
+				from delivering solid products that are on time, gratify the end user and make a real return on investment.
+			</p>
+			<table border="1">
+				<tr>
+					<th>Skills</th>
+					<th>Certifications</th>
+				</tr>
+				<tr>
+					<td>
+						<ul>
+							<li>C++, C#</li>
+							<li>HTML5, CSS, JavaScript, SQL, PHP</li>
+							<li>Powershell, Python</li>
+							<li>Eclipse, Visual Studio</li>
+							<li>Git, GitHub, Perforce</li>
+							<li>Windows, UNIX, Linux</li>
+							<li>AWS, Google AppEngine</li>
+							<li>Project management skills</li>
+						</ul> 
+					</td>
+					<td>
+						<ul>
+							<li><a href="http://www.edcc.edu/pace-it/certificates/web-developer.html" target="_blank">PACE-IT</a> Web Developer Certificate</li>
+							<li><a href="http://www.ciwcertified.com/" target="_blank" >CIW</a> Internet Business Associate Certificate</li>
+							<li><a href="http://www.ciwcertified.com/" target="_blank">CIW</a> Site Development	Associate Certificate</li>
+							<li><a href="http://www.ciwcertified.com/" target="_blank">CIW</a> JavaScript Specialist Certificate</li>
+							<li><a href="https://www.mysql.com/certification/" target="_blank">MySQL</a> DBA Certificate</li>
+							<li><a href="https://www.mysql.com/certification/" target="_blank">MySQL</a> Developer Certificate</li>
+							<li><a href="http://www.washington.edu/" target="_blank">UW</a> C++ OOP Certificate</li>
+							<li><a href="http://spu.edu" target="_blank">SPU</a> Business Programming Certificate</li>
+						</ul>
+					</td>
+					
+				</tr>
+			</table>
+			<h2 class="resumeHeader">Experience</h2>
+			<div class="leftCol">Senior Software Engineer</div><br/>
+			<div class="leftCol">Applied Voice &amp; Speech Technologies</div>
+			<div class="rightCol">October 2003-May 2015</div>
+			<ul>
+				<li>Automated procedures for data maintenance and data recovery.</li>
+				<li>Produced ad-hoc programs and scripts to support unique customer requirements.</li>
+				<li>Designed and maintained the internal database for the company's flagship product.</li>
+				<li>Implemented MySQL replication to support a multiple node architecture.</li>
+				<li>Created stored procedures, triggers and functions.</li>  
+				<li>Resolved customer issues for Tech Support and Professional services.</li>
+			</ul>
+			<div class="leftCol">Software Developer</div><br/>
+			<div class="leftCol">Captaris</div>
+			<div class="rightCol">August 1994-October 2003</div>
+			<ul>
+				<li>Automated procedures for branding OEM software</li>
+				<li>Instituted daily builds and accomodated individual developer build environments.</li>
+				<li>Created and executed database upgrade paradigm that supported 20 years of product changes.</li>
+				<li>Created a template class that encapsulated programatic access to data stores.</li>
+				<li>Lead Y2K refactoring project.</li>  
+			</ul>
+			<h2 class="resumeHeader">Education</h2>			
+			<div class="leftCol">University of Washington</div><br/>
+			<div class="leftCol">Mathematic studies</div>
+			<div class="rightCol">GPA 3.8</div>
+			<br/><br/>
+			<div class="leftCol">Washington University in St Louis</div><br/>
+			<div class="leftCol">Bachelors of Fine Arts</div>
+			<div class="rightCol">GPA 3.6</div>		
 		</section>
 		<footer>
 		</footer>
