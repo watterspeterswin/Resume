@@ -2,17 +2,17 @@ CACHE MANIFEST
 #The CACHE MANIFEST line is required. This line is a comment.
 
 CACHE:
-public\guestbook.html
-public\home.html
-public\interests.html
-public\reflections.html
-public\resume.html
-public\progjects.html
+public\guestbook.htm
+public\home.htm
+public\interests.htm
+public\reflections.htm
+public\resume.htm
+public\projects.htm
 public\images\Chauncey_Olcott_-_Too_Ra_Loo_Ra_Loo_Ral_Irish_Lullaby.mp3
 public\images\collage.png
 public\images\dogsled.mp4
 public\stylesheet\mystyle.css
 
 images/banner.fallback.jpg
-/offline.html
+/offline.htm
 *
