@@ -1,9 +1,167 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Peter Watters"/>
+		<meta name="keywords" content="Full Stack Developer,Software Engineer,Database Designer,Web Designer"/>
+		<meta name="description" content="Peter Watters' R&eacute;sum&eacute; projects"/>
+		<meta name="robots" content="noimageindex, nofollow"/>
 		<link href="stylesheet/mystyle.css" media="all" rel="stylesheet" type="text/css">
 		<title>Projects</title>
+		<style type="text/css">
+
+		#animation
+		{
+			float:right;
+		}
+		
+		#scene>h1
+		{
+			position: relative;
+			top: 200px;
+			text-align: center;
+			color: bisque;
+			font-family: sans-serif;
+			font-style: italic;
+			z-index: 100;
+			-webkit-animation: waveSail 3s ease-in-out infinite,
+			                   fontbulger 10s ease infinite;
+		}
+		@-webkit-keyframes fontbulger {
+			0%, 100% {
+					font-size: 12px;
+			}
+			50% {
+					font-size: 72px;
+			}
+		}
+		
+		#box {
+			 
+		}
+        
+        #scene {   
+            /* Positioning and dimensions */
+            position: relative;
+            top: 200px;
+            left: 10px;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            
+            /* --- Gradient background --- */            
+            background: #0099ff;                                            /* Solid fallback for old browsers */            
+            background: -moz-linear-gradient(top ,#0099ff 10%, #00ccff, #000033);        /* Firefox */            
+            background: -webkit-linear-gradient(top , #0099ff 10%, #00ccff, #000033);        /* WebKit - Chrome and Safari */            
+            background: -ms-linear-gradient(top ,#0099ff 10%, #00ccff, #000033);   /* Internet Explorer 10 */            
+            background: -o-linear-gradient(top ,#0099ff 10%, #00ccff, #000033);     /* Opera */            
+            background: linear-gradient(top ,#0099ff 10%, #00ccff, #000033);  /* general syntax - last */
+        }
+        
+        .ship {  /* position for all the ships */
+            position: absolute;
+            /* Animation properties to be added here */
+            /* Firefox */
+            -moz-animation: shipSail linear infinite;
+            /* WebKit - Chrome and Safari */
+            -webkit-animation: shipSail linear infinite;
+            /* Opera */
+            -o-animation: shipSail linear infinite;
+            /* general syntax */
+            animation: waveSail 1sec ease-in-out infinite,
+			           shipSail linear infinite;
+        }
+        
+        .lrg { /* starting position for the large ship - off screen */
+            /* image is 2400 x 1794 px */
+            bottom: -440px;
+            left: -140px;
+            
+            /* Duration is different for each ship */
+		    /* Firefox */
+            -moz-animation-duration: 12s;
+            /* WebKit - Chrome and Safari */
+            -webkit-animation-duration: 12s;
+            /* Opera */
+            -o-animation-duration: 12s;
+            /* general syntax */
+            animation-duration: 12s;
+        }
+        
+        .med { /* starting position for the medium ship - off screen */
+            /* image is 800 x 598 px */
+            bottom: 80px;
+            left: -110px;
+            
+            /* Duration is different for each ship */
+            /* Firefox */
+            -moz-animation-duration: 20s;
+            /* WebKit - Chrome and Safari */
+            -webkit-animation-duration: 20s;
+            /* Opera */
+            -o-animation-duration: 20s;
+            /* general syntax */
+            animation-duration: 20s;
+        }
+        
+        .sml { /* starting position for the small ship - off screen */
+            /* image is 300 x 224 px */
+            bottom: 130px;
+            left: -80px;
+            
+            /* Duration is different for each ship */
+			/* Firefox */
+            -moz-animation-duration: 30s;
+            /* WebKit - Chrome and Safari */
+            -webkit-animation-duration: 30s;
+            /* Opera */
+            -o-animation-duration: 30s;
+            /* general syntax */
+            animation-duration: 30s;
+        }
+        
+        /* define the ship sail */
+        /* general syntax */
+        @keyframes shipSail 
+		{
+            from { transform: translateX(1540px); }
+            to { transform: translateX(-2400px) ; }
+        }
+        
+		@keyframes waveSail
+		{
+            0%, 25%, 50%, 75%, 100% { transform: translateY(0) rotate(-5deg); }
+            12%,  87% { transform: translateY(10px) rotate(0) ; }
+			37%, 62%  { transform: translateY(10px) rotate(5deg) ; }}
+        }
+		
+		@-webkit-keyframes waveSail
+		{
+            0%, 25%, 50%, 75%, 100% { transform: translateY(0) rotate(-5deg); }
+            12%,  87% { transform: translateY(10px) rotate(0) ; }
+			37%, 62%  { transform: translateY(10px) rotate(5deg) ; }
+        }
+			
+		
+
+		
+        /* browser specific animation */
+        /* Firefox */
+        @-moz-keyframes shipSail {
+            from { -moz-transform: translateX(1540px); }
+            to { -moz-transform: translateX(-2400px); }
+        }
+        /* WebKit - Chrome and Safari */
+        @-webkit-keyframes shipSail {
+            from { -webkit-transform: translateX(1540px); }
+            to { -webkit-transform: translateX(-2400px); }
+        } 
+        /* Opera */
+        @-o-keyframes shipSail {
+            from { -o-transform: translateX(1540px); }
+            to { -o-transform: translateX(-2400px); }
+        }
+    </style>
 	</head>
 	<body>
 		<header>
@@ -18,16 +176,38 @@
 			<a href="guestbook.htm" class="navtile">Guestbook</a>
 		</nav>
 		<section>
+		<h3 id="personalmsg">Here are some examples of my work...</h3>
+		    <div id="animation">
+				<div id="scene">
+					<h1>At Sea</h1>
+					<img alt="" class="ship sml" src="images/Warship-300px.png" width="300" height="224"/>
+					<img alt="" class="ship med" src="images/Warship-800px.png" width="800" height="598"/>
+					<img alt="" class="ship lrg" src="images/Warship-2400px.png" width="2400" height="1794"/>
+				</div>
+			</div>
+			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson2/syb.html" target="_blank">Lesson 2</a>
+			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson3/syb.html" target="_blank">Lesson 3</a>
+			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson4/public/home.html" target="_blank">Lesson 4</a>
+			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson5/syb_day.html" target="_blank" >Lesson 5</a>
+			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson6/guestbook.html" target="_blank" >Lesson 6</a>
+			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson7/interests.html" target="_blank" >Lesson 7</a>
+			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson8/drag_n_drop.html" target="_blank" >Lesson 8</a>
+			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson9/default.html" target="_blank" >Lesson 9</a>
 			<p id="MyLocation">Click the button to get your position:</p>
 			<button onclick="getLocation()">My Location</button>
 			<div id="map"></div>
 				<script>
 					var x=document.getElementById("MyLocation");
+					var options = {
+					  enableHighAccuracy: true,
+					  timeout: 5000,
+					  maximumAge: 300000
+					};
 					function getLocation()
 					{
 						if (navigator.geolocation)
 						{
-							navigator.geolocation.getCurrentPosition(showPosition,showError);
+							navigator.geolocation.getCurrentPosition(showPosition,showError,options);
 						}
 						else{x.innerHTML="Geolocation is not supported by this browser.";}
 					}
@@ -37,7 +217,9 @@
 						var latlon=position.coords.latitude+","+position.coords.longitude;
 						var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
 									+latlon+"&zoom=14&size=400x300&sensor=false";
+
 						document.getElementById("map").innerHTML="<img src='"+img_url+"' />";
+
 					}
 					
 					function showError(error)

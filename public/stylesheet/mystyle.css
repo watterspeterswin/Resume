@@ -1,11 +1,36 @@
+
+@font-face {
+    font-family: 'Limelight Quotes';
+     src: url('styles/fonts/Limelight-webfont.eot');
+     src: url('styles/fonts/Limelight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('styles/fonts/Limelight-webfont.woff') format('woff'),
+         url('styles/fonts/Limelight-webfont.ttf') format('truetype'),
+         url('styles/fonts/Limelight-webfont.svg#LimelightRegular') format('svg');
+    unicode-range: U+201c-d;
+}
+
+/* * {
+	margin: 0px;
+	padding: 0px;
+} */
+
+.quote {
+    font-family: 'Limelight Quotes', serif;
+    font-size: 150%;
+}
+
 body
-{
+{	
 	font-family:arial, verdana, helvetica;
 	color:gray;
 	font-size:14px;
 	background-color:lightseagreen;
-/* 	background-image:url("../images/parthenon-texture.png");
- */}
+	background-attachment:fixed;
+	background-size:contain;
+/* 	background-image: linear-gradient(#FFEB79, #C24704);
+ 	background-image:url("../images/parthenon-texture.png"),linear-gradient(#FFEB79, #C24704);
+	*/
+}
 
 header
 {
@@ -55,19 +80,21 @@ nav
 	display:block;
 	float:left;
 	width:100px;
-	height:1000px;
+	height:700px;
 	background:green;
 }
 
 section
 {
+	position: absolute;
+	overflow-y: auto;
 	padding-top: 10px;
 	padding-left:20px;
     margin-left:100px;
 	padding-right:20px;
 	display:block;
 	width: 730px;
-	height:990px;
+	height:690px;
 	background:lightgreen;
 }
 
@@ -79,6 +106,7 @@ section
 	margin-top:0px;
 	font-family:"Comic Sans MS", cursive, sans-serif
 }
+
 
 h2.Center
 {
@@ -94,31 +122,21 @@ p.Center
 
 footer
 {
-	display:block;
-	float:left;
-	width:830px;
+	width:870px;
 	height:40px;
 	background:lightseagreen;
+	margin-top: 690px;
 }
 
-table
-{
-	width:100%;
-}
-th,h2.resumeHeader
-{
-	width:50%;
-	font-family: tahoma;
-	font-style: italic;
-}
 div.leftCol
 {
 	font-weight:bold;	
 	display:inline-block;margin-right:10px;
+	margin-left:20px;
 }
 div.rightCol
 {
 	font-weight:bold;
-	display:inline-block;
-	float:right;
+	display:inline-block;margin-right:75px;
+	float:right;			
 }
