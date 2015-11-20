@@ -6,10 +6,10 @@
 		<meta name="keywords" content="Full Stack Developer,Software Engineer,Database Designer,Web Designer"/>
 		<meta name="description" content="Peter Watters' R&eacute;sum&eacute; projects"/>
 		<meta name="robots" content="noimageindex, nofollow"/>
-		<link href="stylesheet/mystyle.css" media="all" rel="stylesheet" type="text/css">
+		<link href="stylesheet/mystyle.css" media="screen" rel="stylesheet" type="text/css">
+		<script src="js/geoloc.js" type="text/javascript"></script>
 		<title>Projects</title>
 		<style type="text/css">
-
 		#animation
 		{
 			float:right;
@@ -141,10 +141,7 @@
             12%,  87% { transform: translateY(10px) rotate(0) ; }
 			37%, 62%  { transform: translateY(10px) rotate(5deg) ; }
         }
-			
-		
 
-		
         /* browser specific animation */
         /* Firefox */
         @-moz-keyframes shipSail {
@@ -164,6 +161,7 @@
     </style>
 	</head>
 	<body>
+	    <wrapper>
 		<header>
 		<h1>Projects</h1>
 		</header>
@@ -175,7 +173,7 @@
 			<a href="reflections.htm" class="navtile">Reflections</a>
 			<a href="guestbook.htm" class="navtile">Guestbook</a>
 		</nav>
-		<section>
+		<article>
 		<h3 id="personalmsg">Here are some examples of my work...</h3>
 		    <div id="animation">
 				<div id="scene">
@@ -194,55 +192,20 @@
 			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson8/drag_n_drop.html" target="_blank" >Lesson 8</a>
 			<a href="http://bucket.sandbox.edcc.edu/watt1026/ciwFiles/lesson9/default.html" target="_blank" >Lesson 9</a>
 			<p id="MyLocation">Click the button to get your position:</p>
-			<button onclick="getLocation()">My Location</button>
-			<div id="map"></div>
-				<script>
-					var x=document.getElementById("MyLocation");
-					var options = {
-					  enableHighAccuracy: true,
-					  timeout: 5000,
-					  maximumAge: 300000
-					};
-					function getLocation()
-					{
-						if (navigator.geolocation)
-						{
-							navigator.geolocation.getCurrentPosition(showPosition,showError,options);
-						}
-						else{x.innerHTML="Geolocation is not supported by this browser.";}
-					}
-					
-					function showPosition(position)
-					{
-						var latlon=position.coords.latitude+","+position.coords.longitude;
-						var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
-									+latlon+"&zoom=14&size=400x300&sensor=false";
-
-						document.getElementById("map").innerHTML="<img src='"+img_url+"' />";
-
-					}
-					
-					function showError(error)
-					{
-						switch(error.code)
-						{
-						case error.PERMISSION_DENIED:
-							x.innerHTML="User denied the request for Geolocation."
-							break;
-						case error.POSITION_UNAVAILABLE:
-							x.innerHTML="Location information is unavailable."
-							break;
-						case error.TIMEOUT:
-							x.innerHTML="The request to get user location timed out."
-							break;
-						case error.UNKNOWN_ERROR:
-							x.innerHTML="An unknown error occurred."
-								break;
-						}
-					}
+			<script>
+				var x=document.getElementById("MyLocation");
+				var options = {
+				  enableHighAccuracy: true,
+				  timeout: 5000,
+				  maximumAge: 300000
+				};
 			</script>
-		</section>
+			<button onclick="getLocation(options)">My Location</button>
+			<div id="map"></div>
+
+		</article>
 		<footer>
 		</footer>
+		</wrapper>
 	</body>
 </html>

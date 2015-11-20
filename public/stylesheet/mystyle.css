@@ -9,27 +9,35 @@
     unicode-range: U+201c-d;
 }
 
-/* * {
+* {
 	margin: 0px;
 	padding: 0px;
-} */
+}
 
-.quote {
+.quote 
+{
     font-family: 'Limelight Quotes', serif;
     font-size: 150%;
 }
 
-body
-{	
+body 
+{
 	font-family:arial, verdana, helvetica;
 	color:gray;
 	font-size:14px;
-	background-color:lightseagreen;
-	background-attachment:fixed;
 	background-size:contain;
-/* 	background-image: linear-gradient(#FFEB79, #C24704);
- 	background-image:url("../images/parthenon-texture.png"),linear-gradient(#FFEB79, #C24704);
-	*/
+	background-color:lightseagreen;
+	background-image: linear-gradient(lightseagreen, #FFEB79 );
+}
+
+wrapper 
+{	
+    position:absolute;
+    display:block;
+	width:1000px;
+	height:800px;
+	background-image: linear-gradient(lightseagreen, #FFEB79 );
+
 }
 
 header
@@ -74,6 +82,7 @@ p.labl
 
 nav 
 {
+	position: relative;
 	font-family:arial, verdana, helvetica;
 	font-size:20px;
 	width: 100px;
@@ -84,9 +93,14 @@ nav
 	background:green;
 }
 
-section
+article>p:first-of-type 
 {
-	position: absolute;
+	text-indent:2rem;
+}
+
+article
+{
+	position: relative;
 	overflow-y: auto;
 	padding-top: 10px;
 	padding-left:20px;
@@ -98,23 +112,21 @@ section
 	background:lightgreen;
 }
 
+form > p 
+{
+	padding-bottom:8px;
+}
+
 #personalmsg
 {
 	font-size:2.0em;
 	color:red;
-	padding:0px;
-	margin-top:0px;
+	padding:4px;
+
 	font-family:"Comic Sans MS", cursive, sans-serif
 }
 
-
-h2.Center
-{
-	margin-top:0;
-	text-align:center;
-}
-
-p.Center
+.Center
 {
 	margin-top:0;
 	text-align:center;
@@ -122,21 +134,9 @@ p.Center
 
 footer
 {
+	position: relative;
 	width:870px;
 	height:40px;
 	background:lightseagreen;
-	margin-top: 690px;
 }
 
-div.leftCol
-{
-	font-weight:bold;	
-	display:inline-block;margin-right:10px;
-	margin-left:20px;
-}
-div.rightCol
-{
-	font-weight:bold;
-	display:inline-block;margin-right:75px;
-	float:right;			
-}

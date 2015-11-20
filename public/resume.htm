@@ -9,17 +9,7 @@
 		<link href="stylesheet/mystyle.css" media="all" rel="stylesheet" type="text/css">
 
 		<title>R&eacute;sum&eacute;</title>
-		<script>
-		function printSection(SectionID) 
-		{
-			var printContents = document.getElementById(SectionID).innerHTML;
-			var originalContents = document.body.innerHTML;
-			document.body.innerHTML = printContents;
-			window.print();
-			document.body.innerHTML = originalContents;
-		}
-		</script>
-		
+		<script src="js/utility.js" type="text/javascript"></script>
 		<style>
 
 			table
@@ -32,10 +22,24 @@
 				font-family: tahoma;
 				font-style: italic;
 			}
+			
+			div.leftCol
+			{
+				font-weight:bold;	
+				display:inline-block;margin-right:10px;
+				margin-left:20px;
+			}
+			div.rightCol
+			{
+				font-weight:bold;
+				display:inline-block;margin-right:75px;
+				float:right;			
+			}
 
 		</style>
 	</head>
 	<body>
+	    <wrapper>
 		<header>
 			<h1>R&eacute;sum&eacute;</h1>
 		</header>
@@ -49,13 +53,13 @@
 			<!--- Put button here to print the resume out -->
 			<input  type="button" onclick="printSection('printableArea')" value="Print R&eacute;sum&eacute;" />
 		</nav>
-		<section id="printableArea" style="background-color:linen;">
+		<article id="printableArea" style="background-color:linen;">
 			<h2 class="Center" >Peter Francis Watters</h2>
-			<p class="Center"  >Internet Certified and Ready to Succeed!</p>
+			<h5 class="Center"  >Internet Certified and Ready to Succeed!</h5>
 			<hr class="Fullhr"/>
 			<h2 class="resumeHeader">Summary</h2>
 			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;I love working in a team of talented, smart and motivated colleagues. I enjoy the whole software life cycle –
+				I love working in a team of talented, smart and motivated colleagues. I enjoy the whole software life cycle –
 				gathering requirements, designing, implementing, testing and maintaining software. I get the most satisfaction
 				from delivering solid products that are on time, gratify the end user and make a real return on investment.
 			</p>
@@ -122,8 +126,9 @@
 			<div class="leftCol">Washington University in St Louis</div><br/>
 			<div class="leftCol" style="margin-left:40px">Bachelors of Fine Arts</div>
 			<div class="rightCol">GPA 3.6</div>		
-		</section>
+		</article>
 		<footer>
 		</footer>
+	</wrapper>
 	</body>
 </html>
