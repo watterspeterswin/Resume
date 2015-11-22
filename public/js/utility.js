@@ -1,8 +1,8 @@
-function printSection(SectionID) 
+function printArticle() 
 {
-	var printContents = document.getElementById(SectionID).innerHTML;
+	var printContents = document.getElementsByTagName("article");
 	var originalContents = document.body.innerHTML;
-	document.body.innerHTML = printContents;
+	document.body.innerHTML = printContents[0].innerHTML;
 	window.print();
 	document.body.innerHTML = originalContents;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="../resume.manifest" >
+<html>
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="author" content="Peter Watters"/>
@@ -7,14 +7,27 @@
 		<meta name="description" content="Peter Watters' R&eacute;sum&eacute; home"/>
 		<meta name="robots" content="noimageindex, nofollow"/>
 		<title>home</title>
-		<link href="stylesheet/mystyle.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="stylesheet/screen.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="stylesheet/print.css" media="print" rel="stylesheet" type="text/css" />
+		<style>
+			#wrapper {
+				max-height:690px;
+				max-width:calc(710px + 140px + 10px);
+			}
+			
+			article 
+			{    
+			    max-width:710px;
+			}	
+		</style>
 	</head>
 	<body>
 	    <div id="wrapper">
-		<header>
+		<header class="noprint">
 			<h1>Home</h1>
 		</header>
-		<nav>
+		<div id="colwrapper" style="">
+		<nav class="noprint">
 			<a href="home.htm" class="navtile-select">Home</a>
 			<a href="resume.htm" class="navtile">R&eacute;sum&eacute;</a>
 			<a href="interests.htm" class="navtile">Interests</a>
@@ -39,10 +52,11 @@
 				The code base is close to 30 years old- there are close to 3 million lines of c++ code.</p>
 			<br/>
 			<a href="https://www.linkedin.com/pub/peter-watters/8/748/205" target="_blank">
-				<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Peter Watters's profile on LinkedIn" />
+				<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" style="width:160;height:33;border:0;" alt="View Peter Watters's profile on LinkedIn" />
 			</a>
 		</article>
-		<footer>
+		</div>
+		<footer class="noprint">
 		</footer>
 		</div>
 	</body>

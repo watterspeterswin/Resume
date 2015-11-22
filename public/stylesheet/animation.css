@@ -3,7 +3,7 @@
 	float:right;
 }
 
-#scene>h1
+#scene>h2
 {
 	position: relative;
 	top: 200px;
@@ -12,9 +12,13 @@
 	font-family: sans-serif;
 	font-style: italic;
 	z-index: 100;
-	-webkit-animation: waveSail 3s ease-in-out infinite,
+	animation: waveSail 3s ease-in-out infinite,
 					   fontbulger 10s ease infinite;
+					   
+	-moz-animation: waveSail 3s ease-in-out infinite,
+					fontbulger 10s ease infinite;					   
 }
+
 @-webkit-keyframes fontbulger {
 	0%, 100% {
 			font-size: 12px;
@@ -24,9 +28,15 @@
 	}
 }
 
-#box {
-	 
+@-moz-keyframes fontbulger {
+	0%, 100% {
+			font-size: 12px;
+	}
+	50% {
+			font-size: 72px;
+	}
 }
+
 
 #scene {   
 	/* Positioning and dimensions */
@@ -38,12 +48,8 @@
 	overflow: hidden;
 	
 	/* --- Gradient background --- */            
-	background: #0099ff;                                            /* Solid fallback for old browsers */            
-	background: -moz-linear-gradient(top ,#0099ff 10%, #00ccff, #000033);        /* Firefox */            
-	background: -webkit-linear-gradient(top , #0099ff 10%, #00ccff, #000033);        /* WebKit - Chrome and Safari */            
-	background: -ms-linear-gradient(top ,#0099ff 10%, #00ccff, #000033);   /* Internet Explorer 10 */            
-	background: -o-linear-gradient(top ,#0099ff 10%, #00ccff, #000033);     /* Opera */            
-	background: linear-gradient(top ,#0099ff 10%, #00ccff, #000033);  /* general syntax - last */
+	background: #0099ff;                         /* Solid fallback for old browsers */               
+	background: linear-gradient(#0099ff 10%, #00ccff, #000033);  /* general syntax - last */
 }
 
 .ship {  /* position for all the ships */
@@ -56,8 +62,7 @@
 	/* Opera */
 	-o-animation: shipSail linear infinite;
 	/* general syntax */
-	animation: waveSail 1sec ease-in-out infinite,
-			   shipSail linear infinite;
+	animation: shipSail linear infinite;
 }
 
 .lrg { /* starting position for the large ship - off screen */
@@ -120,7 +125,7 @@
 {
 	0%, 25%, 50%, 75%, 100% { transform: translateY(0) rotate(-5deg); }
 	12%,  87% { transform: translateY(10px) rotate(0) ; }
-	37%, 62%  { transform: translateY(10px) rotate(5deg) ; }}
+	37%, 62%  { transform: translateY(10px) rotate(5deg) ; }
 }
 
 @-webkit-keyframes waveSail

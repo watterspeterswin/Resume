@@ -1,50 +1,23 @@
 <!DOCTYPE html>
-<html manifest="../resume.manifest" >
+<html>
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="author" content="Peter Watters"/>
 		<meta name="keywords" content="Full Stack Developer,Software Engineer,Database Designer,Web Designer"/>
 		<meta name="description" content="Peter Watters' R&eacute;sum&eacute;"/>
 		<meta name="robots" content="noimageindex, nofollow"/>
-		<link href="stylesheet/mystyle.css" media="all" rel="stylesheet" type="text/css">
-
+		<link href="stylesheet/screen.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="stylesheet/print.css" media="print" rel="stylesheet" type="text/css">
 		<title>R&eacute;sum&eacute;</title>
 		<script src="js/utility.js" type="text/javascript"></script>
-		<style>
-
-			table
-			{
-				width:100%;
-			}
-			th,h2.resumeHeader
-			{
-				width:50%;
-				font-family: tahoma;
-				font-style: italic;
-			}
-			
-			div.leftCol
-			{
-				font-weight:bold;	
-				display:inline-block;margin-right:10px;
-				margin-left:20px;
-			}
-			div.rightCol
-			{
-				font-weight:bold;
-				display:inline-block;margin-right:75px;
-				float:right;			
-			}
-
-		</style>
 	</head>
 	<body>
 	    <div id="wrapper">
-		<header>
+		<header class="noprint" >
 			<h1>R&eacute;sum&eacute;</h1>
 		</header>
-		<div id="colwrapper">
-		<nav>
+		<div id="colwrapper" >
+		<nav class="noprint">
 			<a href="home.htm" class="navtile">Home</a>
 			<a href="resume.htm" class="navtile-select">R&eacute;sum&eacute;</a>
 			<a href="interests.htm" class="navtile">Interests</a>
@@ -52,11 +25,11 @@
 			<a href="reflections.htm" class="navtile">Reflections</a>
 			<a href="guestbook.htm" class="navtile">Guestbook</a>
 			<!--- Put button here to print the resume out -->
-			<input  type="button" onclick="printSection('printableArea')" value="Print R&eacute;sum&eacute;" />
+			<input  type="button" onclick="printArticle()" value="Print R&eacute;sum&eacute;" />
 		</nav>
-		<article id="printableArea" style="background-color:linen;">
+		<article>
 			<h2 class="Center" >Peter Francis Watters</h2>
-			<h5 class="Center"  >Internet Certified and Ready to Succeed!</h5>
+			<h5 class="Center" >Internet Certified and Ready to Succeed!</h5>
 			<hr class="Fullhr"/>
 			<h2 class="resumeHeader">Summary</h2>
 			<p>
@@ -99,8 +72,8 @@
 			</table>
 			<h2 class="resumeHeader">Experience</h2>
 			<div class="leftCol">Senior Software Engineer</div><br/>
-			<div class="leftCol" style="margin-left:40px">Applied Voice &amp; Speech Technologies</div>
-			<div class="rightCol">October 2003-May 2015</div>
+			<div class="leftCol subHead">Applied Voice &amp; Speech Technologies</div>
+			<div class="rightCol">Oct 2003-May 2015</div>
 			<ul>
 				<li>Automated procedures for data maintenance and data recovery.</li>
 				<li>Produced ad-hoc programs and scripts to support unique customer requirements.</li>
@@ -110,8 +83,8 @@
 				<li>Resolved customer issues for Tech Support and Professional services.</li>
 			</ul>
 			<div class="leftCol">Software Developer</div><br/>
-			<div class="leftCol" style="margin-left:40px">Captaris</div>
-			<div class="rightCol">August 1994-October 2003</div>
+			<div class="leftCol subHead">Captaris</div>
+			<div class="rightCol">Aug 1994-Oct 2003</div>
 			<ul>
 				<li>Automated procedures for branding OEM software</li>
 				<li>Instituted daily builds and accomodated individual developer build environments.</li>
@@ -121,15 +94,15 @@
 			</ul>
 			<h2 class="resumeHeader">Education</h2>			
 			<div class="leftCol">University of Washington</div><br/>
-			<div class="leftCol" style="margin-left:40px">Mathematic studies</div>
+			<div class="leftCol subHead">Mathematic studies</div>
 			<div class="rightCol">GPA 3.8</div>
 			<br/><br/>
 			<div class="leftCol">Washington University in St Louis</div><br/>
-			<div class="leftCol" style="margin-left:40px">Bachelors of Fine Arts</div>
+			<div class="leftCol subHead">Bachelors of Fine Arts</div>
 			<div class="rightCol">GPA 3.6</div>		
 		</article>
 		</div>
-		<footer>
+		<footer class="noprint">
 		</footer>
 	</div>
 	</body>
