@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#The CACHE MANIFEST line is required. This line is a comment.
+#version 02.00.2015.11.20
 
 CACHE:
 public/guestbook.htm
