@@ -69,6 +69,45 @@ p.labl
     text-align: right;
 }
 
+p.labl>input
+{
+	margin-left:3px;
+}
+
+p.err
+{
+	animation: 1s throb ease-in-out infinite;
+}
+
+#errDisplay
+{
+	color:white;
+	font-weight:bold;
+	background-color:#669999;
+}
+
+@-webkit-keyframes throb {
+	0%, 100% {
+			text-shadow: -2px -2px 10px #ffff00;
+			color:beige;	
+	}
+	50% {
+			text-shadow: 2px 2px 10px #ff0000;
+			color:yellow;
+	}
+}
+
+@-moz-keyframes throb {
+	0%, 100% {
+			text-shadow: -2px -2px 10px #ffff00;
+			color:beige;	
+	}
+	50% {
+			text-shadow: 2px 2px 10px #ff0000;
+			color:yellow;
+	}
+}
+
 nav 
 {
 	width:140px;

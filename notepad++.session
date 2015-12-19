@@ -1,14 +1,29 @@
 <NotepadPlus>
-    <Session activeView="0">
-        <mainView activeIndex="0">
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="23220" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\guestbook.htm" backupFilePath="" originalFileLastModifTimestamp="1444340002" />
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="830" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\home.htm" backupFilePath="" originalFileLastModifTimestamp="1444356853" />
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="1740" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\interests.htm" backupFilePath="" originalFileLastModifTimestamp="1444339211" />
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="1740" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\reflections.htm" backupFilePath="" originalFileLastModifTimestamp="1444339225" />
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="1740" startPos="14" endPos="14" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\resume.htm" backupFilePath="" originalFileLastModifTimestamp="1444339382" />
-			            <File firstVisibleLine="0" xOffset="0" scrollWidth="1740" startPos="14" endPos="14" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\projects.htm" backupFilePath="" originalFileLastModifTimestamp="1444339382" />
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="11590" startPos="0" endPos="0" selMode="0" lang="CSS" encoding="-1" filename="C:\wamp\www\Resume\public\stylesheet\mystyle.css" backupFilePath="" originalFileLastModifTimestamp="1444356934" />
+    <Session activeView="1">
+        <mainView activeIndex="6">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1661" startPos="31" endPos="31" selMode="0" lang="Normal Text" encoding="-1" filename="C:\wamp\www\Resume\resume.manifest" backupFilePath="" originalFileLastModifTimestamp="1448159571">
+                <Mark line="3" />
+            </File>
+            <File firstVisibleLine="0" xOffset="666" scrollWidth="23220" startPos="439" endPos="439" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\guestbook.htm" backupFilePath="" originalFileLastModifTimestamp="1448165806" />
+            <File firstVisibleLine="0" xOffset="371" scrollWidth="1940" startPos="544" endPos="544" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\interests.htm" backupFilePath="" originalFileLastModifTimestamp="1448165794">
+                <Mark line="1" />
+                <Mark line="9" />
+            </File>
+            <File firstVisibleLine="0" xOffset="620" scrollWidth="1740" startPos="449" endPos="449" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\reflections.htm" backupFilePath="" originalFileLastModifTimestamp="1448165794" />
+            <File firstVisibleLine="3" xOffset="252" scrollWidth="1740" startPos="564" endPos="564" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\resume.htm" backupFilePath="" originalFileLastModifTimestamp="1448165770">
+                <Mark line="1" />
+            </File>
+            <File firstVisibleLine="0" xOffset="239" scrollWidth="1740" startPos="392" endPos="395" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\projects.htm" backupFilePath="" originalFileLastModifTimestamp="1448155277" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2052" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\Resume\public\home.htm" backupFilePath="" originalFileLastModifTimestamp="1448165739" />
         </mainView>
-        <subView activeIndex="0" />
+        <subView activeIndex="4">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="520" startPos="70" endPos="70" selMode="0" lang="CSS" encoding="-1" filename="C:\wamp\www\Resume\public\stylesheet\print.css" backupFilePath="" originalFileLastModifTimestamp="1448159629" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2968" startPos="0" endPos="0" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Users\PETERF\OneDrive\cis208\validationlinks.txt" backupFilePath="" originalFileLastModifTimestamp="1447972915" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="728" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\sandbox\animation.html" backupFilePath="" originalFileLastModifTimestamp="1447815993" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1160" startPos="0" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\sandbox\keyframes.html" backupFilePath="" originalFileLastModifTimestamp="1448049996" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="40" startPos="0" endPos="0" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Users\PETERF\OneDrive\Documents\wgnAccessCode.txt" backupFilePath="" originalFileLastModifTimestamp="1448042814" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="632" startPos="264" endPos="264" selMode="0" lang="Javascript" encoding="-1" filename="C:\wamp\www\Resume\public\js\utility.js" backupFilePath="" originalFileLastModifTimestamp="1448139586" />
+            <File firstVisibleLine="18" xOffset="0" scrollWidth="1040" startPos="676" endPos="673" selMode="0" lang="CSS" encoding="-1" filename="C:\wamp\www\Resume\public\stylesheet\animation.css" backupFilePath="" originalFileLastModifTimestamp="1448153972" />
+        </subView>
     </Session>
 </NotepadPlus>

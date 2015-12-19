@@ -109,3 +109,16 @@ footer
 	display:none;
 }
 
+p.err
+{
+	font-style: italic;
+	font-weight: bold;
+}
+
+#errDisplay
+{
+	font-style: italic;
+	font-weight: bold;
+}
+
+
